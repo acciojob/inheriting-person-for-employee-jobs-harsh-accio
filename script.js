@@ -17,3 +17,6 @@ class Employee extends Person {
     console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
   }
 }
+// ✅ Register classes to window so Cypress can access them
+window.Person = Person;
+window.Employee = Employee;
